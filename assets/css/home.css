@@ -1,0 +1,119 @@
+* {
+  font-family: "Gilroy", sans-serif;
+}
+
+.body {
+  height: 100vh;
+  font-family: "Gilroy";
+}
+
+.header {
+  display: flex;
+  font-family: "Gilroy", sans-serif;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #f8f8f9;
+  padding: 10px 0;
+}
+.header .header_left {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  padding-left: 35px;
+}
+.header .header_left .title h1 {
+  font-size: 20px;
+}
+.header .header_search .container-search {
+  background: #F5F6F7;
+  border-radius: 10px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .header_search .container-search input {
+  background: #F5F6F7;
+  height: 45px;
+  width: 300px;
+  border: 0px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.header .header_right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-right: 15px;
+}
+.header .header_right .icons {
+  display: flex;
+  gap: 10px;
+}
+.header .header_right .profil {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .header_right .profil h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.header .menuv2 {
+  display: none;
+}
+
+.mainBody {
+  position: fixed02;
+  height: 100%;
+  background: f6f6f8;
+}
+.mainBody .customer-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: space-around;
+  background: #f6f6f8;
+}
+.mainBody .customer-container .customer-card {
+  grid-column-end: span 3;
+  display: flex;
+  background: #fff;
+  border-radius: 5px;
+  margin: 20px;
+}
+.mainBody .customer-container .profile {
+  display: flex;
+}
+.mainBody .customer-container .profile .nameref {
+  display: flex;
+  flex-direction: column;
+}
+.mainBody .customer-container .more a {
+  text-decoration: none;
+}
+
+main.wrapper_container {
+  margin-left: 230px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .header .header_left .title {
+    display: none;
+  }
+  .header .header_search {
+    display: none;
+  }
+  .header .header_right {
+    display: none;
+  }
+  .header .menuv2 {
+    display: flex;
+  }
+  .sidebar {
+    display: none;
+  }
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,26 @@
+/* Base styles pour le conteneur */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+      /* padding: 20px; */
+    box-sizing: border-box;
+  }
+  
+  /* Media query pour écrans plus petits, ajustez les valeurs selon vos besoins */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  }
+  
+  /* Media query pour écrans de taille moyenne, ajustez les valeurs selon vos besoins */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  /* Media query pour écrans plus grands, ajustez les valeurs selon vos besoins */
+
+  /* Ajoutez d'autres media queries au besoin pour différentes tailles d'écran */

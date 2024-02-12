@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealBiz</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header_left">
+                <div class="logo">
+                   <img src="./assets/images/logo.png" alt="">
+                </div>
+                <div class="title">
+                    <h1> Dashboard</h1>
+                </div>
+            </div>
+
+            <div class="header_search">
+                <div class="container-search">
+                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.8682 13.399C14.1054 12.1364 14.8682 10.4073 14.8682 8.5C14.8682 4.63401 11.7342 1.5 7.86816 1.5C4.00217 1.5 0.868164 4.63401 0.868164 8.5C0.868164 12.366 4.00217 15.5 7.86816 15.5C9.82685 15.5 11.5976 14.6955 12.8682 13.399ZM12.8682 13.399L15.8682 16.5" stroke="#3E444B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    <form action="">
+                        <input type="text" placeholder= "Search..." >
+                    </form>
+                </div>
+                
+            </div>
+
+            <div class="header_right">
+                    <div class="icons">
+                        <i class="messages">
+                            <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.368164" width="48" height="48" rx="8" fill="#F5F6F7" />
+                                <path
+                                    d="M20.8682 31H20.3682C16.3682 31 14.3682 30 14.3682 25V20C14.3682 16 16.3682 14 20.3682 14H28.3682C32.3682 14 34.3682 16 34.3682 20V25C34.3682 29 32.3682 31 28.3682 31H27.8682C27.5582 31 27.2582 31.15 27.0682 31.4L25.5682 33.4C24.9082 34.28 23.8282 34.28 23.1682 33.4L21.6682 31.4C21.5082 31.18 21.1382 31 20.8682 31Z"
+                                    stroke="#3E444B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M28.3646 23H28.3736" stroke="#3E444B" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M24.3636 23H24.3726" stroke="#3E444B" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M20.3627 23H20.3717" stroke="#3E444B" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </i>
+                        <i class="notif">
+                            <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.368164" width="48" height="48" rx="8" fill="#F5F6F7" />
+                                <path
+                                    d="M24.3682 15C20.927 15 18.1374 17.5785 18.1374 20.7593V24.9858C18.1374 25.9629 17.7294 26.8957 17.0118 27.5589C16.4265 28.1 16.8093 29.0782 17.6064 29.0782H31.1299C31.927 29.0782 32.3099 28.1 31.7245 27.5589C31.0069 26.8957 30.5989 25.9629 30.5989 24.9858V20.7593C30.5989 17.5785 27.8093 15 24.3682 15Z"
+                                    stroke="#3E444B" stroke-width="1.5" stroke-linejoin="round" />
+                                <path d="M22.3682 32.4971C22.3682 32.4971 24.3682 33.6284 26.3682 32.4971" stroke="#3E444B"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+    
+                        </i>    
+                    </div>              
+                
+                    <div class="profil">
+                <img src="./assets/images/profil.png" alt="">
+                            
+                        <h5>Henry Jr.</h5>
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.2882 8.9502L13.7682 15.4702C12.9982 16.2402 11.7382 16.2402 10.9682 15.4702L4.44824 8.9502" stroke="#32393C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                </div>
+
+            </div>
+
+            <div class="menuv2">
+                <img src="./assets/images/menu.png" alt="">
+            </div>
+
+        </div>
+
+
+    </header>
+
+
+  
+
+
+
+<!-- MainBody***** -->
+        <div class="mainBody">
+            
+            <div class="sidebar">
+            
+  <div class="container">
+    <ul>
+      <li class="dropdown">
+        
+        <a href="#" data-toggle="dropdown"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.5 11.2337C2.5 10.1218 2.5 9.56587 2.63815 9.05394C2.77872 8.53305 3.02321 8.04597 3.35693 7.62202C3.68489 7.20538 4.13069 6.87321 5.0223 6.20888L5.69813 5.70531C7.53279 4.33832 8.45011 3.65482 9.48911 3.52102C9.8283 3.47734 10.1717 3.47734 10.5109 3.52102C11.5499 3.65482 12.4672 4.33832 14.3019 5.70531L14.9777 6.20887C15.8693 6.87321 16.3151 7.20538 16.6431 7.62202C16.9768 8.04597 17.2213 8.53305 17.3619 9.05394C17.5 9.56587 17.5 10.1218 17.5 11.2337V11.2337C17.5 13.3479 17.5 14.405 17.1105 15.2218C16.7159 16.0491 16.0491 16.7159 15.2218 17.1105C14.405 17.5 13.3479 17.5 11.2337 17.5H8.76629C6.65213 17.5 5.59505 17.5 4.77822 17.1105C3.95085 16.7159 3.28409 16.0491 2.88953 15.2218C2.5 14.405 2.5 13.3479 2.5 11.2337V11.2337Z" stroke="#3E444B" stroke-width="1.5" stroke-linejoin="round"/>
+          <line x1="9.0835" y1="13.417" x2="10.9168" y2="13.417" stroke="#3E444B" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <i class="icon-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.4248 16.6004L12.8581 11.1671C13.4998 10.5254 13.4998 9.47539 12.8581 8.83372L7.4248 3.40039" stroke="#3E444B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+ </i>Home</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Review</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" data-toggle="dropdown"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.0003 8.33268C11.8413 8.33268 13.3337 6.8403 13.3337 4.99935C13.3337 3.1584 11.8413 1.66602 10.0003 1.66602C8.15938 1.66602 6.66699 3.1584 6.66699 4.99935C6.66699 6.8403 8.15938 8.33268 10.0003 8.33268Z" stroke="#42526D" stroke-width="1.5"/>
+          <path d="M15 7.50065C16.3808 7.50065 17.5 6.56791 17.5 5.41732C17.5 4.26673 16.3808 3.33398 15 3.33398" stroke="#42526D" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M5 7.50065C3.61929 7.50065 2.5 6.56791 2.5 5.41732C2.5 4.26673 3.61929 3.33398 5 3.33398" stroke="#42526D" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M10 17.5007C12.7614 17.5007 15 16.0083 15 14.1673C15 12.3264 12.7614 10.834 10 10.834C7.23858 10.834 5 12.3264 5 14.1673C5 16.0083 7.23858 17.5007 10 17.5007Z" stroke="#42526D" stroke-width="1.5"/>
+          <path d="M16.667 15.8327C18.1288 15.5121 19.167 14.7003 19.167 13.7493C19.167 12.7984 18.1288 11.9866 16.667 11.666" stroke="#42526D" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M3.33301 15.8327C1.87113 15.5121 0.833008 14.7003 0.833008 13.7493C0.833008 12.7984 1.87113 11.9866 3.33301 11.666" stroke="#42526D" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>          
+          <i class="icon-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.4248 16.6004L12.8581 11.1671C13.4998 10.5254 13.4998 9.47539 12.8581 8.83372L7.4248 3.40039" stroke="#3E444B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</i>Customers</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Customers list</a></li>
+          <li><a href="#">Order List</a></li>
+          <li><a href="#">Property Details</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" data-toggle="dropdown"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.0003 8.33268C11.8413 8.33268 13.3337 6.8403 13.3337 4.99935C13.3337 3.1584 11.8413 1.66602 10.0003 1.66602C8.15938 1.66602 6.66699 3.1584 6.66699 4.99935C6.66699 6.8403 8.15938 8.33268 10.0003 8.33268Z" stroke="#42526D" stroke-width="1.5"/>
+          <path d="M10.0003 17.5007C13.222 17.5007 15.8337 16.0083 15.8337 14.1673C15.8337 12.3264 13.222 10.834 10.0003 10.834C6.77866 10.834 4.16699 12.3264 4.16699 14.1673C4.16699 16.0083 6.77866 17.5007 10.0003 17.5007Z" stroke="#42526D" stroke-width="1.5"/>
+          </svg>
+          
+          <i class="icon-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.4248 16.6004L12.8581 11.1671C13.4998 10.5254 13.4998 9.47539 12.8581 8.83372L7.4248 3.40039" stroke="#3E444B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</i>Profile </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Post Details </a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" data-toggle="dropdown"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.66699 10.0007C1.66699 6.85795 1.66699 5.28661 2.6433 4.31029C3.61962 3.33398 5.19096 3.33398 8.33366 3.33398H11.667C14.8097 3.33398 16.3811 3.33398 17.3573 4.31029C18.3337 5.28661 18.3337 6.85795 18.3337 10.0007C18.3337 13.1433 18.3337 14.7147 17.3573 15.691C16.3811 16.6673 14.8097 16.6673 11.667 16.6673H8.33366C5.19096 16.6673 3.61962 16.6673 2.6433 15.691C1.66699 14.7147 1.66699 13.1433 1.66699 10.0007Z" stroke="#42526D" stroke-width="1.5"/>
+          <path d="M5 6.66602L6.79908 8.16525C8.32961 9.44068 9.09492 10.0784 10 10.0784C10.9051 10.0784 11.6704 9.44068 13.2009 8.16525L15 6.66602" stroke="#42526D" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <i class="icon-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.4248 16.6004L12.8581 11.1671C13.4998 10.5254 13.4998 9.47539 12.8581 8.83372L7.4248 3.40039" stroke="#3E444B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</i>Email </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Compose</a></li>
+          <li><a href="#">Inbox</a></li>
+          <li><a href="#">Read</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" data-toggle="dropdown"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.66699 2.5L1.88775 2.57358C2.98778 2.94027 3.5378 3.1236 3.85239 3.56008C4.16699 3.99656 4.16699 4.57633 4.16699 5.73587V7.91667C4.16699 10.2737 4.16699 11.4522 4.89923 12.1844C5.63146 12.9167 6.80997 12.9167 9.16699 12.9167H15.8337" stroke="#42526D" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M6.25 15C6.94036 15 7.5 15.5597 7.5 16.25C7.5 16.9403 6.94036 17.5 6.25 17.5C5.55964 17.5 5 16.9403 5 16.25C5 15.5597 5.55964 15 6.25 15Z" stroke="#42526D" stroke-width="1.5"/>
+          <path d="M13.75 15C14.4403 15 15 15.5596 15 16.25C15 16.9403 14.4403 17.5 13.75 17.5C13.0597 17.5 12.5 16.9403 12.5 16.25C12.5 15.5596 13.0597 15 13.75 15Z" stroke="#42526D" stroke-width="1.5"/>
+          <path d="M9.16699 7.5H6.66699" stroke="#42526D" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M4.16699 5H13.709C15.4215 5 16.2777 5 16.6482 5.56188C17.0187 6.12378 16.6814 6.91078 16.0068 8.48483L15.6497 9.31817C15.3347 10.053 15.1772 10.4204 14.8642 10.6269C14.5511 10.8333 14.1513 10.8333 13.3518 10.8333H4.16699" stroke="#42526D" stroke-width="1.5"/>
+          </svg>
+          
+          <i class="icon-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.4248 16.6004L12.8581 11.1671C13.4998 10.5254 13.4998 9.47539 12.8581 8.83372L7.4248 3.40039" stroke="#3E444B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</i>Shop </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Product Grid</a></li>
+          <li><a href="#">Product List</a></li>
+          <li><a href="#">Product Details</a></li>
+          <li><a href="#">Order</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" data-toggle="dropdown"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.5 8.33366C2.5 5.19096 2.5 3.61962 3.47631 2.6433C4.45262 1.66699 6.02397 1.66699 9.16667 1.66699H10.8333C13.976 1.66699 15.5474 1.66699 16.5237 2.6433C17.5 3.61962 17.5 5.19096 17.5 8.33366V11.667C17.5 14.8097 17.5 16.3811 16.5237 17.3573C15.5474 18.3337 13.976 18.3337 10.8333 18.3337H9.16667C6.02397 18.3337 4.45262 18.3337 3.47631 17.3573C2.5 16.3811 2.5 14.8097 2.5 11.667V8.33366Z" stroke="#42526D" stroke-width="1.5"/>
+          <path d="M9.99969 5V6.66667M9.99969 6.66667V8.33333M9.99969 6.66667H8.33301M9.99969 6.66667H11.6664" stroke="#42526D" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M6.66699 11.667H13.3337" stroke="#42526D" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M7.5 15H12.5" stroke="#42526D" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          
+          <i class="icon-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.4248 16.6004L12.8581 11.1671C13.4998 10.5254 13.4998 9.47539 12.8581 8.83372L7.4248 3.40039" stroke="#3E444B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</i>Invoice </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Check out</a></li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+      
+            </div>
+    
+            <main class="wrapper_container">
+                <div class="customer-container">
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 1.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Albert Flores</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 2.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Ralph Edwards</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 3.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Marvin McKinney</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 4.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Jane Cooper</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 5.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Eleanor Pena</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 6.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Albert Flores</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 7.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Robert Fox</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 8.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Devon Lane</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 9.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Floyd Miles</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 10.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Savannah Nguyen</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 11.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Guy Hawkins</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 12.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Kristin Watson</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 13.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Bessie Cooper</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 14.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Dianne Russell</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 15.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Leslie Alexander</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="customer-card">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="./assets/images/av 16.png" alt="">
+                            </div>
+                            <div class="nameref">
+                                <div class="name">
+                                    <p>Annette Black</p>
+                                </div>
+                                <div class="ref">
+                                    <p>#C01234</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                            <div class="orderhistory">
+                                <p>Order History</p>
+                            </div>
+                            <div class="more">
+                                <a href="#">...</a>
+                            </div>
+                            <div class="callsms">
+                                <div class="call">
+                                    <img src="./assets/images/call.png" alt="">                    
+                                </div>
+                                <div class="sms">
+                                    <img src="./assets/images/sms.png" alt="">                    
+                                </div>
+                                <div class="gps">
+                                    <img src="./assets/images/gps.png" alt="">                    
+                                </div>
+                            </div>
+                    </div>
+        
+                        </div>
+            </main>
+
+            
+
+
+        </div>
+</body> 
+<script src="\realbiz\assets\js\sidebar.js"></script>
+
+
+</html>
