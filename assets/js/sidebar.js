@@ -1,30 +1,36 @@
 
-// Dropdown Menu
-var dropdown = document.querySelectorAll('.dropdown');
-var dropdownArray = Array.prototype.slice.call(dropdown,0);
-dropdownArray.forEach(function(el){
-	var button = el.querySelector('a[data-toggle="dropdown"]'),
-			menu = el.querySelector('.dropdown-menu'),
-			arrow = button.querySelector('i.icon-arrow');
+var menuButton = document.getElementById('menuv2');
+var sidebar = document.getElementById('sidebar');
+var navigationLinkItem = document.querySelectorAll('.navigation_link_item');
 
-	button.onclick = function(event) {
-		if(!menu.hasClass('show')) {
-			menu.classList.add('show');
-			menu.classList.remove('hide');
-			arrow.classList.add('open');
-			arrow.classList.remove('close');
-			event.preventDefault();
-		}
-		else {
-			menu.classList.remove('show');
-			menu.classList.add('hide');
-			arrow.classList.remove('open');
-			arrow.classList.add('close');
-			event.preventDefault();
-		}
-	};
+navigationLinkItem.forEach(linkItem => {
+    let dropDownTriggerbutton = linkItem.querySelector('.navigation_link');
+
+    dropDownTriggerbutton.addEventListener('click', (event) => {
+
+        let dropDownElement = linkItem.querySelector('.nav_link_item_dropdown');
+
+        if (dropDownElement) {
+            linkItem.classList.toggle("active");
+
+            let subDropDownLinkItem = dropDownElement.querySelectorAll('.nav_link_item_dropdown_item');
+
+
+            subDropDownLinkItem.forEach(subDropdown => {
+
+                subDropdown.addEventListener('click', (event) => {
+                    for (let index = 0; index < subDropDownLinkItem.length; index++) {
+                        subDropDownLinkItem[index].classList.remove('active');
+
+                    }
+                    subDropdown.classList.add('active');
+                });
+            });
+
+        }
+    });
+});
+
+menuButton.addEventListener("click" ,(Event) => {
+	sidebar.classList.toggle("openSidebar")
 })
-
-Element.prototype.hasClass = function(className) {
-    return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
-};

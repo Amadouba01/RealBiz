@@ -364,3 +364,14 @@
       }
     }
 }
+
+
+@media (max-width: 920px) {
+  header .header_search {
+    display: none;
+
+  }
+  .sidebar{
+    display: none;
+  }
+}

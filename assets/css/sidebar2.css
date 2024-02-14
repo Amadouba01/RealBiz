@@ -1,5 +1,3 @@
-@import "./partials/common.css";
-@import "./home.css";
 @font-face {
   font-family: "Gilroy-Medium";
   src: url("../fonts/gilroy/Gilroy-Medium.ttf");
@@ -138,14 +136,4 @@
   #sidebar.openSidebar {
     transform: translateX(0%);
   }
-}
-@font-face {
-  font-family: "Gilroy";
-  src: url(../fonts/gilroy/Gilroy-Regular.ttf);
-}
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  background: #f6f6f8;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=sidebar2.css.map */

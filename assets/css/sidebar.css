@@ -159,4 +159,12 @@
   .sidebar .container {
     width: 260px;
   }
+}
+@media (max-width: 920px) {
+  header .header_search {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
 }/*# sourceMappingURL=sidebar.css.map */

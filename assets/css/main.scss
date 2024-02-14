@@ -1,7 +1,14 @@
 @import"./partials/common.css";
 @import"./home.css";
-@import"./sidebar.css";
+@import"./sidebar2.scss";
 @font-face {
     font-family:'Gilroy';
     src: url(../fonts/gilroy/Gilroy-Regular.ttf);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #f6f6f8;
 }

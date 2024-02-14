@@ -1,12 +1,19 @@
 * {
     font-family: "Gilroy", sans-serif;
 }
-.body{
-    
+
+.body {
+
     height: 100vh;
-   font-family: 'Gilroy';
+    font-family: 'Gilroy';
 }
-.header{
+#header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.header {
+    background: #fff;
     display: flex;
     font-family: 'Gilroy', sans-serif;
     align-items: center;
@@ -15,13 +22,15 @@
     width: 100%;
     border-bottom: 1px solid #f8f8f9;
     padding: 10px 0;
-    .header_left{
+
+    .header_left {
         display: flex;
         align-items: center;
         gap: 120px;
         padding-left: 35px;
-        .title{
-            & h1{
+
+        .title {
+            & h1 {
                 font-size: 20px;
             }
         }
@@ -29,8 +38,8 @@
 
     .header_search {
         // background: #F5F6F7;
-       
-        .container-search{
+
+        .container-search {
             background: #F5F6F7;
             // border: 1px ;
             border-radius: 10px;
@@ -38,33 +47,37 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            & input{
+
+            & input {
                 background: #F5F6F7;
                 height: 45px;
                 width: 300px;
-                border: 0px ;
+                border: 0px;
                 margin: 0;
                 padding: 0;
                 display: flex;
-    
-                }
+
+            }
         }
-      }
-    .header_right{
+    }
+
+    .header_right {
         display: flex;
         gap: 10px;
         align-items: center;
         padding-right: 15px;
 
-        .icons{
+        .icons {
             display: flex;
             gap: 10px;
         }
-        .profil{
+
+        .profil {
             display: flex;
             align-items: center;
             gap: 10px;
-            h5{
+
+            h5 {
                 margin: 0;
                 padding: 0;
                 font-size: 14px;
@@ -73,17 +86,17 @@
         }
 
     }
-    .menuv2{
+
+    .menuv2 {
         display: none;
     }
-    
+
 }
 
-  .mainBody{
-    position: fixed02;
-    height: 100%;
-    // display: flex;
-    background: f6f6f8;
+.mainBody {
+    transition: all 0.3s ease-in-out;
+    margin-left: 270px;
+    margin-top: 100px;
     .customer-container {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -91,66 +104,66 @@
         // gap: 0 20px;
         // margin: 10px;
         background: #f6f6f8;
-        .customer-card{
+
+        .customer-card {
             grid-column-end: span 3;
             display: flex;
             background: #fff;
             border-radius: 5px;
             margin: 20px;
         }
-        .profile{
+
+        .profile {
             display: flex;
-            .nameref{
+
+            .nameref {
                 display: flex;
                 flex-direction: column;
             }
         }
-        .more a{
+
+        .more a {
             text-decoration: none;
         }
     }
-  }
+}
 
-  main.wrapper_container {
-    margin-left: 230px;
-    transition: all 0.3s ease-in-out;
 
-  }
-  
-  
-  @media (max-width: 768px) {
-  
-    .header{
-        .header_left{
-            .title{
-                display: none;
-            }
-        }
-    
-        .header_search {
-          display: none;
-          }
-        .header_right{
-        
-            display: none;
-    
-        }
-        .menuv2{
-            display: flex;
-        }
+@media (max-width: 768px) {
+    .mainBody {
+        margin-left: 0px;
         
     }
     
-.sidebar{
-    display: none;
-}
+    .header {
+        .header_left {
+            .title {
+                display: none;
+            }
+        }
+
+        .header_search {
+            display: none;
+        }
+
+        .header_right {
+
+            display: none;
+
+        }
+
+        .menuv2 {
+            display: flex;
+        }
+
+    }
+
+    .sidebar {
+        display: none;
+    }
 }
 
 
-  @media (max-width: 426px) {
-    
-  }
-  
-  @media (max-width: 941px) {
-    
-  }
+@media (max-width: 426px) {}
+
+@media (max-width: 941px) {}
